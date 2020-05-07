@@ -24,12 +24,12 @@ export default {
 <style scoped lang="less">
 div{
   width: 100%;
-  height: 150px;
+  height: 1.5rem;
   
   .my-swipe .van-swipe-item {
   color: #fff;
-  font-size: 20px;
-  line-height: 150px;
+  font-size: 0.2rem;
+  line-height: 1.5rem;
   text-align: center;
   background-color: #39a9ed;
   width: 100%;

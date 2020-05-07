@@ -68,7 +68,7 @@ export default {
 <style lang="less" >
 
 .box {
-  padding-top: 10px;
+  padding-top: 0.1rem;
   background-color:rgb(222, 222, 231);
 
 .div_ {
@@ -77,37 +77,37 @@ export default {
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  height: 60px;
+  height: 0.6rem;
   background-color: #fff;
   position: relative  ;
-  top: 20px;
-  font-size: 18px;
+  top: 0.2rem;
+  font-size: 0.18rem;
   // transform: translate(0,20px);
   transform: translateZ(0);//阻止轮播图带动下面的字体跳动
   clear:both;
-  border-top:20px;
+  border-top:0.2rem;
   // float: none;
-  margin-bottom: 20px;
+  margin-bottom: 0.2rem;
   .solid {
     display: inline-block;
-    width: 100px;
+    width: 1rem;
     background-color: #000;
-    border: 1px solid #000;
+    border: 0.01rem solid #000;
   }
 }
 }
 .center_ {
   width: 100%;
-  height: 100px;
+  height: 1rem;
   display: flex;
   box-sizing: border-box;
-  padding: 0 10px;
+  padding: 0 0.1rem;
   background-color: #fff;
-  border-bottom: 1px solid  rgb(222, 222, 231);
+  border-bottom: 0.01rem solid  rgb(222, 222, 231);
   img {
-    width: 100px;
-    height: 100px;
-    margin-right: 10px;
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.1rem;
   }
   .right {
     display: flex;
@@ -115,9 +115,9 @@ export default {
     justify-content: space-around;
     
     p {
-      font-size: 16px;
+      font-size: 0.16rem;
       width: 100%;
-      height: 40px;
+      height: 0.4rem;
       display: -webkit-box;
       -webkit-box-orient: vertical;
       -webkit-line-clamp: 2;
@@ -125,16 +125,16 @@ export default {
     }
     .right_bottom {
       .but {
-        width: 50px;
-        height: 20px;
+        width: 0.5rem;
+        height: 0.2rem;
         display: inline-block;
         background-color: #00d;
-        margin-right: 5px;
-        font-size: 8px;
-        line-height: 20px;
+        margin-right: 0.05rem;
+        font-size: 0.08rem;
+        line-height: 0.2rem;
         text-align: center;
-        border-radius: 10px;
-        margin-top: 10px;
+        border-radius: 0.1rem;
+        margin-top: 0.1rem;
       }
       .qian {
         text-decoration: line-through;

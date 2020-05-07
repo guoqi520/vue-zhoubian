@@ -33,7 +33,7 @@ div {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-top: 5px;
+  margin-top: 0.05rem;
   background-color: #fff;
   .list-top {
     display: flex;
@@ -41,9 +41,9 @@ div {
     text-align: center;
   }
   .list {
-    width: 40px;
-    height: 40px;
-    border: 1px solid #000;
+    width: 0.4rem;
+    height: 0.4rem;
+    border: 0.01rem solid #000;
     display: flex;
   }
 }

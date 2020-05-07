@@ -43,10 +43,10 @@ export default {
 <style lang="less" >
 .nav {
   position: relative;
-  top: 10px;
+  top: 0.1rem;
 }
 .box {
-  padding: 0 0 10px;
+  padding: 0 0 0.1rem;
 
 }
 </style>

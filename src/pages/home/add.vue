@@ -124,29 +124,29 @@ div {
   }
   .my-swipe .van-swipe-item {
     color: #fff;
-    font-size: 20px;
-    line-height: 150px;
+    font-size: 0.2rem;
+    line-height: 1.5rem;
     text-align: center;
     background-color: #39a9ed;
   }
   .null_ {
     width: 100%;
-    height: 50px;
+    height: 0.5rem;
   }
   .custom-indicator {
     position: absolute;
-    right: 5px;
-    bottom: 5px;
-    padding: 2px 5px;
-    font-size: 12px;
+    right: 0.05rem;
+    bottom: 0.05rem;
+    padding: 0.02rem 0.05rem;
+    font-size: 0.12rem;
     background: rgba(0, 0, 0, 0.1);
   }
   .left {
     position: absolute;
-    left: 5px;
-    bottom: 5px;
-    padding: 2px 5px;
-    font-size: 12px;
+    left: 0.05rem;
+    bottom: 0.05rem;
+    padding: 0.02rem 0.05rem;
+    font-size: 0.12rem;
     background: rgba(0, 0, 0, 0.1);
   }
   .index {
@@ -154,89 +154,89 @@ div {
   }
   .center_ {
     width: 100%;
-    height: 150px;
+    height: 1.5rem;
     box-sizing: border-box;
-    padding: 15px;
+    padding: 0.15rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     .center_title {
-      font-size: 16px;
+      font-size: 0.16rem;
     }
     .center_but {
       span {
         display: inline-block;
-        width: 80px;
-        height: 30px;
+        width: 0.8rem;
+        height: 0.3rem;
         background-color: Silver;
-        margin-right: 10px;
+        margin-right: 0.1rem;
         text-align: center;
-        line-height: 30px;
-        border-radius: 15px;
+        line-height: 0.3rem;
+        border-radius: 0.15rem;
       }
     }
   }
   .taocan {
     width: 100%;
-    height: 250px;
+    height: 2.5rem;
     background-color: #cccccc;
 
     .taocan_ {
       width: 100%;
-      height: 237px;
+      height: 2.37rem;
       box-sizing: border-box;
-      padding: 15px;
+      padding: 0.15rem;
       background-color: #fff;
       position: relative;
-      top: 15px;
+      top: 0.15rem;
       h2 {
         font-weight: bold;
       }
       .taocan_title {
         width: 100%;
-        height: 100px;
-        border-bottom: 1px solid #cccccc;
+        height: 1rem;
+        border-bottom: 0.01rem solid #cccccc;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         p {
-          font-size: 16px;
-          margin-top: 15px;
+          font-size: 0.16rem;
+          margin-top: 0.15rem;
         }
         .taocan_but {
           display: flex;
           justify-content: space-between;
           span:nth-child(1) {
             display: inline-block;
-            width: 100px;
-            height: 25px;
+            width: 1rem;
+            height: 0.25rem;
             // background-color: #0066ff;
             text-align: center;
-            line-height: 25px;
-            font-size: 16px;
+            line-height: 0.25rem;
+            font-size: 0.16rem;
             color: #ff6600;
             display: flex;
           }
           span:nth-child(2) {
             display: inline-block;
-            width: 100px;
-            height: 25px;
+            width: 1rem;
+            height: 0.25rem;
             background-color: #0066ff;
             text-align: center;
             line-height: 25px;
-            font-size: 14px;
-            border-radius: 15px;
+            font-size: 0.14rem;
+            border-radius: 0.15rem;
             color: #fff;
           }
           span:nth-child(3) {
             display: inline-block;
-            width: 100px;
-            height: 25px;
+            width: 1rem;
+            height: 0.25rem;
             background-color: #cccccc;
             text-align: center;
-            line-height: 25px;
-            font-size: 14px;
-            border-radius: 15px;
+            line-height: 0.25rem;
+            font-size: 0.14rem;
+            border-radius: 0.15rem;
             color: #fff;
           }
         }
@@ -245,7 +245,7 @@ div {
   }
   .bottom_bar {
     width: 100%;
-    height: 50px;
+    height: 0.5rem;
     background-color: silver;
     position: fixed;
     bottom: 0px;
@@ -257,21 +257,21 @@ div {
       span {
         display: inline-block;
         width: 35px;
-        height: 35px;
-        border: 1px solid #000;
+        height: 0.35rem;
+        border: 0.01rem solid #000;
         border-radius: 50%;
-        padding: 5px;
+        padding: 0.05rem;
         text-align: center;
-        margin-left: 20px;
+        margin-left: 0.2rem;
       }
     }
     .bottom_bar_right {
-      width: 130px;
+      width: 1.3rem;
       height: 100%;
       background-color: #0066ff;
       text-align: center;
-      line-height: 50px;
-      font-size: 16px;
+      line-height: 0.5rem;
+      font-size: 0.16rem;
       color: #fff;
     }
   }

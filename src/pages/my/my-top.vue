@@ -5,7 +5,7 @@
     <div class="my_top">
       <img src="../../assets/logo.png" />
       <p @click="login" v-show="bool">{{name}}</p>
-      <p v-show="bools" @click="logindal">{{logins}}</p>
+      <p v-show="bools" @click="showPopup">{{logins}}</p>
     </div>
     <div class="my_bottom">
       <div class="my_bottom_list">
@@ -22,6 +22,13 @@
       </div>
       <button @click="del">退出</button>
     </div>
+    <van-popup v-model="show">
+      <div class="inp_">
+        修改用户名称：
+        <input type="text" ref="ok_" maxlength="5" :value="logins"/>
+        <button @click="ok">确定</button>
+      </div>
+    </van-popup>
     <BottomBar />
   </div>
 </template>
@@ -38,7 +45,9 @@ export default {
       name: "登录注册",
       logins: "",
       bool: false,
-      bools: true
+      bools: true,
+      show: false,
+      okname: ""
     };
   },
   created() {
@@ -46,20 +55,29 @@ export default {
     if (this.logins === null) {
       this.bool = true;
     }
+    window.console.log(this.logins);
   },
   methods: {
+    ok() {
+      this.show = false;
+      this.logins = this.$refs.ok_.value;
+    
+      window.sessionStorage.setItem("token", this.logins);
+      window.console.log(this.logins);
+    },
     del() {
-      if (confirm("您确定退出登录吗")) {
+      if (confirm("您确定退出登录吗") ) {
         window.sessionStorage.clear();
         this.bools = false;
         this.bool = true;
+        // this.$router.push("/login");
       }
     },
     login() {
       this.$router.push("/login");
     },
-    logindal() {
-      alert("查看信息还没有写好哦");
+    showPopup() {
+      this.show = true;
     }
   }
 };
@@ -111,5 +129,15 @@ export default {
       font-size: 18px;
     }
   }
+}
+.inp_ {
+  width: 300px;
+  height: 100px;
+  /*background-color: #39a9ed;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  overflow: hidden;
 }
 </style>

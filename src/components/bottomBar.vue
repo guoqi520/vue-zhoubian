@@ -19,11 +19,11 @@ export default {
         height: 0.5rem;
         position: fixed;
         bottom: 0;
-        font-size: 12px;
+        font-size: 0.12rem;
         text-align: center;
-        padding-top:5px;
+        padding-top:0.05rem;
         box-sizing: border-box ;
-        border-top: 1px solid rgb(222, 222, 231);
+        border-top: 0.01rem solid rgb(222, 222, 231);
     }
     .bottombar>div{
        flex: 1;
@@ -31,24 +31,24 @@ export default {
     .tu{
         width: 12%;
         height: 56%;
-        margin-left:82px;
+        margin-left:0.82rem;
         background-image: url(../assets/bar.png);
         background-size: 1rem 0.5rem;
     }
     .tua{
-        background-position: 100px 25px
+        background-position: 1rem 0.25rem
     }
     .tub{
-        background-position: 123px 25px
+        background-position: 1.23rem 0.25rem
     }
     .router-link-active{
         color:#922846;
     }
     .router-link-active>.tua{
-        background-position: 100px 50px;
+        background-position: 1rem 0.5rem;
     }
     .router-link-active>.tub{
-        background-position:123px 50px;
+        background-position:1.23rem 0.5rem;
     }
    
 </style>

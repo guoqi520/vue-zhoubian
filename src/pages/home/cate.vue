@@ -2,7 +2,7 @@
   <div>
     <TopBar topTitle="分类商品" />
     <div class="null"></div>
-    <div>{{newtext}}</div>
+  
     <div class="cate_top">
       <div class="cate_top_left" @click="fun()">
         <span>分类/排序</span>
@@ -40,6 +40,7 @@
             :class="{active:i == innav}"
           >{{v.name}}</span>
         </div>
+        
       </div>
     </transition>
 
@@ -129,6 +130,7 @@ export default {
       ]
     };
   },
+  created(){window.scroll(0,0)},
   computed:{
       newtext(){
         return this.text.split('').reverse().join('')
@@ -142,6 +144,7 @@ export default {
   methods: {
     fun() {
       this.up = !this.up;
+       window.scroll(0, 0);
     },
     add() {
       this.$router.push("/add");
@@ -171,7 +174,7 @@ div {
   }
   .cate_top {
     padding: 0 15px;
-    margin-top: 10px;
+    // margin-top: 10px;
     width: 100%;
     height: 50px;
     display: flex;
@@ -298,7 +301,7 @@ div {
 }
 .slide-fade-enter,
 .slide-fade-leave-to {
-  transform: translateY(-10px);
+  transform: translateY(-20px);
   opacity: 0;
 }
 </style>

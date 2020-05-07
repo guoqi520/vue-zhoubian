@@ -21,7 +21,7 @@ Vue.prototype.px2vw = function (px) {
 
 // 引入vant组件
 import 'vant/lib/index.css';
-import { Tab, Tabs ,Swipe, SwipeItem,Lazyload,Icon,Collapse, CollapseItem ,Stepper,Overlay,CountDown} from 'vant';
+import { Tab, Tabs ,Swipe, SwipeItem,Lazyload,Icon,Collapse, CollapseItem ,Stepper,Overlay,CountDown,Popup} from 'vant';
 Vue.use(CountDown);
 Vue.use(Collapse);
 Vue.use(CollapseItem);
@@ -33,6 +33,7 @@ Vue.use(Icon);
 Vue.use(Lazyload);
 Vue.use(Stepper);
 Vue.use(Overlay);
+Vue.use(Popup);
 
 new Vue({
   render: h => h(App),

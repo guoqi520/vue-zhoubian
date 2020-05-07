@@ -1,7 +1,7 @@
 <template>
   <div>
     <span>密码</span>
-    <input type="text" v-model="value" />
+    <input type="text" v-model="valuea" ref="inpligon" maxlength="11" />
     <button @click="login()">登录</button>
     <button @click="payment()">退出</button>
   </div>
@@ -10,17 +10,20 @@
 export default {
   data() {
     return {
-      value: "1234"
+      valuea: "12345678901"
     };
   },
   methods: {
     login() {
-      window.sessionStorage.setItem("token", this.value);
-       alert("登录成功")
-      this.$router.push({
-        name:"my-top",
-        params:{login: this.value}
-      })
+      if(this.$refs.inpligon.value.length===11){
+        window.sessionStorage.setItem("token", this.valuea);
+        this.$router.push({name:"my-top", params:{login: this.valuea}
+        })
+        alert("登录成功")
+
+      }else {
+        alert("你的手机号码有误")
+      }
     },
     payment(){
         this.$router.push("/")

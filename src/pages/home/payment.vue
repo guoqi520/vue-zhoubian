@@ -3,7 +3,9 @@
     <TopBar topTitle="提交"></TopBar>
     <div style="height: 50px"></div>
     <div class="payment_top">
-      <span><van-count-down :time="time" @finish="finish" format="mm 分 ss 秒"/></span>
+      <span>
+        <van-count-down :time="time" @finish="finish" format="mm 分 ss 秒" />
+      </span>
       <span>内未支付，订单将被取消</span>
     </div>
     <div class="payment_">
@@ -13,7 +15,6 @@
     <div class="payment_">
       <div class="payment_left">订单编号</div>
       <div>1234567890</div>
-
     </div>
     <div class="payment_">
       <div class="payment_left">订单金额</div>
@@ -25,26 +26,35 @@
   </div>
 </template>
 <script>
+import { Dialog } from "vant";
 import TopBar from "@/components/topBar.vue";
 export default {
   components: {
     TopBar
   },
-  data(){
-    return{
-      time: 15 * 60 * 1000,
-      num:"1234567899"
-
-    }
+  data() {
+    return {
+      time: 10 * 1000,
+      num: "1234567899",
+      flag: false
+    };
   },
-  created() {
-  },
+  created() {},
   beforeUpdate() {
-    console.log(window.sessionStorage.setItem('key',this.time))
+    console.log(window.sessionStorage.setItem("key", this.time));
   },
   methods: {
     finish() {
-      alert('倒计时结束');
+      Dialog.alert({
+        message: "未在规定时间内付款"
+      })
+        .then(() => {
+          this.$router.push("/home-top");
+          this.flag = false;
+        })
+        .catch(() => {
+          return;
+        });
     },
     fun() {
       window.sessionStorage.clear();
@@ -52,9 +62,8 @@ export default {
     },
     pay() {
       this.$router.push("/paymentok");
-     let timedome = window.sessionStorage.setItem("key",this.time)
-      console.log(timedome)
-
+      let timedome = window.sessionStorage.setItem("key", this.time);
+      console.log(timedome);
     }
   }
 };
@@ -80,24 +89,21 @@ export default {
   padding: 0 15px;
   border-bottom: 1px solid #999;
   font-size: 14px;
-  .payment_left{
-      width: 30%;
-
+  .payment_left {
+    width: 30%;
   }
-
 }
-.but{
-    width: 90%;
-    height: 50px;
-    background-color: #3d3d3d;
-    border: 0;
-    position: relative;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    margin-top:50px;
-    border-radius: 5px;
-    color: #fff;
-
+.but {
+  width: 90%;
+  height: 50px;
+  background-color: #3d3d3d;
+  border: 0;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 50px;
+  border-radius: 5px;
+  color: #fff;
 }
 </style>

@@ -26,24 +26,24 @@ export default {
   background-color: #fff ;
   .center {
     background-color: #999;
-    width: 354px;
-    height: 36px;
-    border: 1px solid #000;
-    border-radius: 17px;
-    margin: 15px 0;
+    width: 3.54rem;
+    height: 0.36rem;
+    border: 0.01rem solid #000;
+    border-radius: 0.17rem;
+    margin: 0.15rem 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
     i {
-      font-size: 18px;
-      margin-left: 20px;
+      font-size: 0.18rem;
+      margin-left: 0.2rem;
     }
     input {
       width: 100%;
       height: 100%;
       border: 0;
-      margin-left: 20px;
+      margin-left: 0.2rem;
       background-color: #999;
     }
   }
